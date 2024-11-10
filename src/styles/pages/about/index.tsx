@@ -60,9 +60,9 @@ const AboutPage = () => {
                   <Link href="#" aria-label="Open Products Page">
                     Full Stack Jr
                   </Link>
-                  <Typography type="p">
-                    <Typography type="p">{t("aboutFullStack")}</Typography>
-                  </Typography>
+
+                  <Typography type="p">{t("aboutFullStack")}</Typography>
+
                   <Typography type="p">
                     {t("technologies")}:{" "}
                     {stack.fullStack.map((tech, index) => (

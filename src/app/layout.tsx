@@ -5,8 +5,8 @@ import StyledComponentsRegistry from "@/lib/styled-components-registry";
 import AppContext from "@/utils/context";
 import { useState } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { clearState, loadState, saveState } from "@/utils/localstorage";
-import Head from "next/head";
+import { loadState } from "@/utils/localstorage";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -26,6 +26,8 @@ export default function RootLayout({
     setTheme(!theme);
   };
 
+  console.log(process.env.NEXT_PUBLIC_GAID);
+
   return (
     <html lang="pt-BR">
       <body className={montserrat.className}>
@@ -44,6 +46,7 @@ export default function RootLayout({
           </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GAID!} />
     </html>
   );
 }
