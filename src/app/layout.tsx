@@ -7,6 +7,7 @@ import { useState } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { loadState } from "@/utils/localstorage";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function RootLayout({
           </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GAID!} />
     </html>
   );
 }
