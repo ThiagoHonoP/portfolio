@@ -19,10 +19,6 @@ const Layout: React.FC<
     <Template>
       <Main>
         <BodyStyling theme={theme} />
-        <Head>
-          <title>Thiago Honorato | Web Developer</title>
-        </Head>
-
         <Navbar />
 
         <BackLay title={title}>

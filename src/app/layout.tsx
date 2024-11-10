@@ -15,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [show, setShow] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(true);
   const [theme, setTheme] = useState(loadState());
 
   const handleOpen = () => {
@@ -28,10 +28,6 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <title>Thiago Honorato</title>
-      </Head>
       <body className={montserrat.className}>
         <StyledComponentsRegistry>
           <LanguageProvider>

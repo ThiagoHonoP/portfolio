@@ -3,6 +3,9 @@ import styled, { createGlobalStyle, css } from "styled-components";
 export const BackLay = styled.div`
   margin: 0;
 
+  @media (max-width: 992px) {
+    display: none;
+  }
   h1 {
     white-space: pre;
     color: var(--mark);
@@ -12,6 +15,7 @@ export const BackLay = styled.div`
     opacity: 1;
     z-index: -1;
     bottom: 0px;
+
     svg {
       opacity: 0.03;
     }

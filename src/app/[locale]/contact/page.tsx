@@ -1,5 +1,3 @@
-import { locales } from "@/contexts/LanguageContext";
-import useTranslation from "@/hooks/useTranslation";
 import ContactPage from "@/styles/pages/contact";
 import { Metadata } from "next";
 
