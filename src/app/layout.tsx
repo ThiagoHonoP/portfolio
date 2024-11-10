@@ -6,7 +6,7 @@ import AppContext from "@/utils/context";
 import { useState } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { loadState } from "@/utils/localstorage";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -26,8 +26,6 @@ export default function RootLayout({
     setTheme(!theme);
   };
 
-  console.log(process.env.NEXT_PUBLIC_GAID);
-
   return (
     <html lang="pt-BR">
       <body className={montserrat.className}>
@@ -42,11 +40,11 @@ export default function RootLayout({
               }}
             >
               {children}
+              <Analytics />
             </AppContext.Provider>
           </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GAID!} />
     </html>
   );
 }
