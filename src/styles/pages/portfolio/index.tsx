@@ -13,6 +13,8 @@ import {
 import { Typography } from "@/components/Typography";
 import { PORTFOLIO_DATA } from "@/components/AppData/portfolio";
 import { useState } from "react";
+import Image from "@/components/Image";
+import Proffy from "@/assets/proffy.png";
 export default function ProjectsPage() {
   const { t, locale } = useTranslation();
   const [data, setData] = useState(PORTFOLIO_DATA);
@@ -39,7 +41,7 @@ export default function ProjectsPage() {
                       id="cardHover"
                       tabIndex={0}
                     >
-                      {/* <Image src={Proffy} alt="" /> */}
+                      <Image src={item.imageUrl} />
 
                       <div className="content__slate">
                         <h3> {item.title} </h3>
