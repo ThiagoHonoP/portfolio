@@ -196,7 +196,7 @@ export const BodyStyling = createGlobalStyle`
 body {
   background: var(--bg) !important;
   padding-right: 0px !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: '__Rubik_ca98e2', sans-serif;
   margin:0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -moz-osx-font-smoothing:grayscale;
@@ -220,7 +220,7 @@ svg{
 }
 
 a, h1, h2, h3, h4, h5, h6, p, button, input[type=text], input[type=date], input[type=password], input[type=value], b, label, td, select, textarea, th {
-  font-family: "Montserrat", sans-serif;
+  font-family: '__Rubik_ca98e2', sans-serif;
   text-rendering: geometricPrecision;
   color: var(--cw);
 }
