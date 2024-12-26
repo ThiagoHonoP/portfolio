@@ -1,5 +1,5 @@
 "use client";
-import { Rubik } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from "@/lib/styled-components-registry";
 import AppContext from "@/utils/context";
@@ -9,7 +9,7 @@ import { loadState } from "@/utils/localstorage";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const rubik = Rubik({ subsets: ["latin"], weight: ["400", "500", "600"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export default function RootLayout({
   children,
@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
-      <body className={rubik.className}>
+      <body className={inter.className}>
         <StyledComponentsRegistry>
           <LanguageProvider>
             <AppContext.Provider
