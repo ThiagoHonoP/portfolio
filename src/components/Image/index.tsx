@@ -7,11 +7,6 @@ interface IImage {
   className?: string;
 }
 
-const defaultProps = {
-  alt: "thiagohonop",
-  className: "",
-};
-
 const Image: React.FC<IImage> = ({ src, alt, className }) => (
   <Img
     src={src}
@@ -22,7 +17,5 @@ const Image: React.FC<IImage> = ({ src, alt, className }) => (
     height={500}
   />
 );
-
-Image.defaultProps = defaultProps;
 
 export default Image;

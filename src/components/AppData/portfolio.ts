@@ -23,7 +23,7 @@ export const PORTFOLIO_DATA = [
   {
     title: "Walletrack - Fullstack",
     description: "Finanças pessoais | MERN Stack",
-    imageUrl: "https://i.imgur.com/P32aJW9.png",
+    imageUrl: "https://i.imgur.com/JHGJYn1.png",
     github: "https://github.com/ThiagoHonoP",
     technologies: ["Mongodb", "Express", "React", "Node", "Typescript"],
   },
