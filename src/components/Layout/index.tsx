@@ -7,6 +7,7 @@ import Cursor from "../Cursor";
 import Navbar from "../Navbar";
 import Template from "../Transition";
 import { LogoBackground } from "../Icons";
+import type { Viewport } from "next";
 
 const Layout: React.FC<
   PropsWithChildren<{
