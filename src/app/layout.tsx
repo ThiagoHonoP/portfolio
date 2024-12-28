@@ -34,9 +34,6 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
-      <Head>
-        <meta name="theme-color" content=" #020a13" />
-      </Head>
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <LanguageProvider>
