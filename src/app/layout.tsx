@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { loadState } from "@/utils/localstorage";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -29,6 +30,9 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR">
+      <Head>
+        <meta name="theme-color" content=" #020a13" />
+      </Head>
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <LanguageProvider>
