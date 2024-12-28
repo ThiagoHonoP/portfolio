@@ -9,9 +9,16 @@ import { loadState } from "@/utils/localstorage";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
+import { Viewport } from "next";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "cyan" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
 export default function RootLayout({
   children,
 }: Readonly<{
