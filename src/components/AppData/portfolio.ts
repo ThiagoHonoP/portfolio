@@ -29,8 +29,8 @@ export const PORTFOLIO_DATA = [
   },
   {
     title: "Aircnc - Fullstack",
-    description: "Finanças pessoais | MERN Stack",
-    imageUrl: "",
+    description: "Conheça  startups | MERN Stack",
+    imageUrl: "https://i.imgur.com/arrHOQp.png",
     github: "https://github.com/ThiagoHonoP",
     technologies: ["Mongodb", "Express", "React", "Node", "Typescript"],
   },
