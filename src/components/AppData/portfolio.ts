@@ -36,7 +36,7 @@ export const PORTFOLIO_DATA = [
   },
   {
     title: "IA integration - Fullstack",
-    description: "Finanças pessoais | MERN Stack",
+    description: "interação com openai api | MERN Stack",
     imageUrl: "https://i.imgur.com/snWMDHN.png",
     github: "https://github.com/ThiagoHonoP",
     technologies: ["Mongodb", "Express", "React", "Node", "Typescript"],
