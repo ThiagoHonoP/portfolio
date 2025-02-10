@@ -13,8 +13,11 @@ export default function HomePage() {
     <Layout title="Home">
       <PageSection>
         <PageWrapper>
-          <h1 data-text="Thiago Honorato Developer" className="intro__text">
-            <mark className="mark">Thiago Honorato Developer</mark>
+          <h1 data-text="Frontend +" className="intro__text sub__text">
+            <mark className="mark">Frontend +</mark>
+          </h1>
+          <h1 data-text="Full-stack Developer" className="intro__text">
+            <mark className="mark">Full-stack Developer</mark>
           </h1>
           <article>
             <Typography type="p">{t("homeDescription")}</Typography>

@@ -11,7 +11,6 @@ export const BackLay = styled.div`
     color: var(--mark);
     position: fixed;
     left: -2rem;
-    /* transition: all 0.8s ease; */
     opacity: 1;
     z-index: -1;
     bottom: 0px;
@@ -250,11 +249,14 @@ export const PageSection = styled.div`
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
   }
+  .sub__text {
+    margin-bottom: 0rem !important;
+  }
   .intro__text {
     text-transform: uppercase;
     font-size: 2.275em;
     font-weight: 500;
-    margin: 2rem 0rem 1.5rem;
+    margin: 0rem 0rem 1.5rem;
     position: relative;
     font-weight: 600;
     letter-spacing: 9.9px;

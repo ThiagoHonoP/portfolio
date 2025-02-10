@@ -15,7 +15,7 @@ export default function Resume() {
     <Layout>
       <PageSection>
         <PageWrapper>
-          <h1 data-text="Thiago Honorato dev" className="intro__text">
+          <h1 data-text="Resume" className="intro__text">
             RESUME
           </h1>
           <article>
