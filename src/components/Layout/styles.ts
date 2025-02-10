@@ -256,7 +256,7 @@ export const PageSection = styled.div`
     text-transform: uppercase;
     font-size: 2.275em;
     font-weight: 500;
-    margin: 0.8rem 0rem 1.5rem;
+    margin: 0rem 0rem 1.5rem;
     position: relative;
     font-weight: 600;
     letter-spacing: 9.9px;
