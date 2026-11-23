@@ -1,6 +1,5 @@
 "use client";
 import { Inter } from "next/font/google";
-
 import StyledComponentsRegistry from "@/lib/styled-components-registry";
 import AppContext from "@/utils/context";
 import { useState } from "react";
@@ -8,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { loadState } from "@/utils/localstorage";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import "./globals.css";
 import { Viewport } from "next";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
