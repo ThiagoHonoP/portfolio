@@ -1,6 +1,6 @@
 "use client";
 import { Inter } from "next/font/google";
-import "./globals.css";
+
 import StyledComponentsRegistry from "@/lib/styled-components-registry";
 import AppContext from "@/utils/context";
 import { useState } from "react";
